@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Roomy website to find your prefer room and choose roommate who agree with."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./lib/animate/animate.css" />
+    <link rel="stylesheet" href="./lib/swiper js/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Task</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg header">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./img/logo.png" alt="" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a
+                class="nav-link main-nav-link active"
+                aria-current="page"
+                href="#section-hero"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-nav-link" href="#section-who">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-nav-link" href="#section-services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-nav-link" href="#section-faq">FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                En
+                <img
+                  src="./img/website-icon/caret-down-fill.svg"
+                  alt=""
+                  class="ms-1"
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">AR</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-cta" href="register.html">Get Start?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="section-hero" class="section-hero">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-12 col-lg-6">
+              <h1 class="heading-primary text-center text-lg-start">
+                <span class="accent-text">Room</span> <br />
+                And Room <br />
+                Finder
+              </h1>
+              <div class="hero-description">
+                <a href="#section-rent" class="arrow-btn"
+                  ><img src="./img/icon/down-arrow.svg" alt="down arrow"
+                /></a>
+
+                <p>Find your prefer room and choose roommate who agree with.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+              <img
+                src="img/hero-img1.webp"
+                alt="A Girl with search image"
+                class="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-rent" class="section-rent">
+        <div class="container">
+          <div class="row text-center text-lg-start">
+            <div class="col-12 col-lg-6">
+              <img
+                src="./img/rent-img1.webp"
+                alt="A man carrying a laptop"
+                class="rent-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-12 col-lg-6 order-first order-lg-last mb-5 mb-lg-0">
+              <h2 class="heading-secondary">
+                How <span class="accent-text">can we help you</span> to display
+                your house to rent?
+              </h2>
+              <p class="rent-description">
+                You can add your advertisement about your apartment or room you
+                want to attract customers to it.
+              </p>
+              <a href="register.html" class="rent-cta"
+                ><span>Get Start</span>
+                <ion-icon name="chevron-forward-outline" class="icon"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-services" class="section-services">
+        <div class="container">
+          <div
+            class="row text-center text-lg-start justify-content-center align-items-center"
+          >
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+              <h2 class="services-title heading-secondary">
+                <span class="yellow-text">Our services</span> offered to you by
+                Roomyco
+              </h2>
+            </div>
+
+            <div class="col-8 col-lg-6 d-flex justify-content-center">
+              <div
+                id="services-carousel"
+                class="services-carousel carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="services-carousel-buttons carousel-indicators">
+                  <button
+                    type="button"
+                    class="services-carousel-btn active"
+                    data-bs-target="#services-carousel"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="services-carousel-btn"
+                    data-bs-target="#services-carousel"
+                    data-bs-slide-to="1"
+                    aria-current="true"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    class="services-carousel-btn"
+                    data-bs-target="#services-carousel"
+                    data-bs-slide-to="2"
+                    aria-current="true"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="services-carousel-item carousel-item active">
+                    <img src="./img/hero-img1.webp" alt="" loading="lazy" />
+                    <a href="#" class="">Find a roommate</a>
+                  </div>
+                  <div class="services-carousel-item carousel-item">
+                    <img src="./img/hero-img1.webp" alt="" loading="lazy" />
+                    <a href="#" class="">Find a roommate</a>
+                  </div>
+                  <div class="services-carousel-item carousel-item">
+                    <img src="./img/hero-img1.webp" alt="" loading="lazy" />
+                    <a href="#" class="">Find a roommate</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-about" class="section-about">
+        <div class="container">
+          <h2 class="heading-secondary text-center">
+            About our app <span class="orange-text">Room</span>
+          </h2>
+          <div class="row justify-content-between text-center text-lg-start">
+            <div class="col-12 col-lg-6">
+              <div class="swiper Slider-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/my ad details.webp"
+                      alt="Slide Image"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/My-pofile.webp"
+                      alt="Slide Image"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/Home page section2.webp"
+                      alt="Slide Image"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div id="about-carousel" class="about-carousel carousel slide">
+                <div class="carousel-inner">
+                  <div class="about-carousel-item carousel-item active">
+                    <div class="text-center mb-5 d-inline-block mx-auto">
+                      <h3 class="carousel-item-title">Message Page</h3>
+                      <img
+                        src="./img/yellow line.png"
+                        alt=""
+                        class="yellow-line"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p class="carousel-item-text">
+                      You can communicate with roommate or homeowners.
+                    </p>
+                  </div>
+                  <div class="about-carousel-item carousel-item">
+                    <div class="text-center mb-5 d-inline-block mx-auto">
+                      <h3 class="carousel-item-title">Message Page</h3>
+                      <img
+                        src="./img/yellow line.png"
+                        alt=""
+                        class="yellow-line"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p class="carousel-item-text">
+                      You can communicate with roommate or homeowners.
+                    </p>
+                  </div>
+                  <div class="about-carousel-item carousel-item">
+                    <div class="text-center mb-5 d-inline-block mx-auto">
+                      <h3 class="carousel-item-title">Message Page</h3>
+                      <img
+                        src="./img/yellow line.png"
+                        alt=""
+                        class="yellow-line"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p class="carousel-item-text">
+                      You can communicate with roommate or homeowners.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-buttons">
+                  <button
+                    class="carousel-btn carousel-prev"
+                    data-bs-target="#about-carousel"
+                    data-bs-slide="prev"
+                  >
+                    <img src="./img/left-arrow.png" alt="" />
+                  </button>
+                  <button
+                    class="carousel-btn carousel-next"
+                    data-bs-target="#about-carousel"
+                    data-bs-slide="next"
+                  >
+                    <img src="./img/right-arrow.png" alt="" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="download">
+                <p class="download-now">Downlead Now</p>
+                <div class="download-buttons">
+                  <a href="#" class="download-btn">
+                    <img src="./img/android.png" alt="" />
+                    <span>Android</span>
+                  </a>
+                  <a href="#" class="download-btn">
+                    <img src="./img/apple.png" alt="" />
+                    <span>ios</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-faq" class="section-faq">
+        <div class="container">
+          <h2 class="heading-secondary text-center">FAQ</h2>
+          <div class="faq-wrapper">
+            <div class="faq">
+              <p class="faq-question">What else does our app offer you?</p>
+
+              <p class="faq-answer">
+                The services of searching for Roommates, seeker for room., easy
+                access and direct communication with users through the in-app
+                conversation, and lots of features.
+              </p>
+              <img
+                src="./img/Questions-pana 1 (1).png"
+                alt=""
+                class="faq-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="faq">
+              <p class="faq-question">
+                Where can I avail of the application services?
+              </p>
+
+              <p class="faq-answer">
+                All regions within the UAE, all seven emirates.
+              </p>
+              <img
+                src="./img/Address-bro (1).png"
+                alt=""
+                class="faq-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="faq">
+              <div>
+                <p class="faq-question">
+                  The application is safe for my own data?
+                </p>
+
+                <p class="faq-answer">
+                  Surely, we designed the app with the latest technology and
+                  software that ensures the highest degree of security and
+                  protection of users' information.
+                </p>
+              </div>
+              <img
+                src="./img/Data report-amico 1 (1).png"
+                alt=""
+                class="faq-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-who" class="section-who">
+        <div class="container">
+          <h2 class="heading-secondary text-center">who we are</h2>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-4 mb-5 mb-lg-0">
+              <img
+                src="./img/amico-copy.webp"
+                alt=""
+                class="who-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-md-7 who-text">
+              <p>
+                Surely, we designed the app with the latest technology and
+                software that ensures the highest degree of security and
+                protection of users' information.
+              </p>
+              <p>
+                Surely, we designed the app with the latest technology and
+                software that ensures the highest degree of security and
+                protection of users' information.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <form class="cta-form order-last order-md-first">
+              <div class="mb-5">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-5">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-5">
+                <label for="message">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Type something of you want..."
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button class="cta-btn">Send Message</button>
+              </div>
+            </form>
+
+            <div class="cta-right">
+              <p class="cta-right-title">Let’s talk</p>
+              <p class="cta-right-text">
+                To request a quote or want to meet up for coffee contact us
+                directly or fill out the form and we will get back to you
+                promptly.
+              </p>
+              <img
+                src="./img/Email campaign-pana.webp"
+                alt=""
+                class="cta-right-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-wrapper">
+          <div class="col-12 col-md-4 logo-col">
+            <a href="index.html" class="footer-logo text-lg-center"
+              ><img src="./img/footer-logo.png" alt="logo" class="logo"
+            /></a>
+            <p class="footer-description">
+              Find your prefer room and choose roommate who agree.
+            </p>
+            <ul class="social-links">
+              <li>
+                <a href="www.instagram.com" target="_blank"
+                  ><ion-icon
+                    name="logo-instagram"
+                    class="social-icon"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="www.facebook.com" target="_blank"
+                  ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="www.twitter.com" target="_blank"
+                  ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="www.tiktok.com" target="_blank"
+                  ><ion-icon name="logo-tiktok" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="www.whatsapp.com" target="_blank"
+                  ><ion-icon name="logo-whatsapp" class="social-icon"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-col col-md-3">
+            <p class="footer-heading">Terms &amp; Policies</p>
+            <ul class="footer-nav">
+              <li><a href="#" class="footer-link">Terms of services</a></li>
+              <li><a href="#" class="footer-link">Privacy policy</a></li>
+              <li><a href="#" class="footer-link">Cookie policy</a></li>
+            </ul>
+          </div>
+
+          <nav class="nav-col col-md-3">
+            <p class="footer-heading">Contact</p>
+            <ul class="footer-nav">
+              <li class="contact">
+                <a href="mailto:roomyco@room.com" class="footer-link contact">
+                  <ion-icon name="mail" class="contact-icon"></ion-icon>
+                  <span>roomyco@room.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+971 586 834 566" class="footer-link contact">
+                  <ion-icon name="call" class="contact-icon"></ion-icon>
+                  <span>+971 586 834 56</span></a
+                >
+              </li>
+              <li class="contact">
+                <ion-icon name="location" class="contact-icon"></ion-icon
+                ><span class="location">Emirates</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="copyright">
+          <p>All rights are save 2024 by company.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      async
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      async
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js" async></script>
+    <script src="./lib/swiper js/swiper-bundle.min.js" async></script>
+    <!-- <script src="./lib/wow/wow.min.js"></script> -->
+    <!-- <script>
+      new WOW().init();
+    </script> -->
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>

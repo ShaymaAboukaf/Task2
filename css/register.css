@@ -1,0 +1,238 @@
+.register {
+  display: grid;
+  grid-template-columns: 1fr 700px;
+  min-height: 100vh;
+  background-image: url(../img/gradient-bg.webp);
+  background-size: cover;
+  background-position: right;
+}
+
+.register-left {
+  padding: 4.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: block;
+  height: 3.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.img-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-img {
+  width: 70%;
+}
+
+.register-right {
+  padding: 4.8rem 1.6rem;
+  border-radius: 50% 0 0 50%/100% 0 0 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.register-right-wrapper {
+  max-width: 415px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #035781;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.register-title {
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.input-group img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+}
+
+.input-control {
+  width: 100%;
+  border: 1px solid #d9d9d7;
+  padding: 1.6rem 5.6rem;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1.6rem;
+  transition: 0.6s;
+}
+
+.input-control:focus {
+  border: 1px solid #2387c2;
+}
+
+.input-control::placeholder {
+  font-size: 1.6rem;
+  color: #7d8082;
+}
+
+.forgot-password:link,
+.forgot-password:visited {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #035781;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  transition: 1s;
+}
+
+.forgot-password:hover,
+.forgot-password:active {
+  color: #1e8fc4;
+}
+
+.register-btns {
+  display: flex;
+
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+  row-gap: 1.6rem;
+  column-gap: 3.2rem;
+}
+
+.signin-btn:link,
+.signin-btn:visited {
+  background-color: #2387c2;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.signin-btn:hover,
+.signin-btn:active {
+  background-color: #fff;
+  color: #2387c2;
+  border: 2px solid #2387c2;
+}
+
+.signup-btn:link,
+.signup-btn:visited {
+  color: #2387c2;
+  background-color: #fff;
+  border: 2px solid #2387c2;
+}
+
+.signup-btn:hover,
+.signup-btn:active {
+  color: #fff;
+  background-color: #2387c2;
+  border: 2px solid #2387c2;
+}
+
+.or-signin {
+  position: relative;
+  color: #aeaeae;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.or-signin::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 1px;
+  background-color: #aeaeae;
+}
+
+.or-signin::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 1px;
+  background-color: #aeaeae;
+}
+
+.other-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.signin-social:link,
+.signin-social:visited {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+
+.signin-social:hover,
+.signin-social:active {
+  background-color: #d6d6d6;
+}
+
+.signin-icon {
+  width: 22px;
+}
+
+.signin-social:nth-child(3) .signin-icon {
+  width: 16px;
+}
+
+@media (max-width: 992px) {
+  .register {
+    grid-template-columns: 1fr;
+  }
+
+  .register-img {
+    width: 30%;
+  }
+
+  .register-right {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .register-img {
+    width: 60%;
+  }
+
+  .register-btns {
+    flex-direction: column;
+  }
+}

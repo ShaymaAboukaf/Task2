@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/verify-email.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="verify-email">
+        <p class="verify-title">Enter your verification code!</p>
+
+        <div class="verify-code">
+          <input type="text" placeholder="-" class="code-input" />
+          <input type="text" placeholder="-" class="code-input" />
+          <input type="text" placeholder="-" class="code-input" />
+          <input type="text" placeholder="-" class="code-input" />
+        </div>
+        <div id="timer">05:00</div>
+        <p class="received-code">
+          I didn’t received the code?
+          <a href="#">Send again</a>
+        </p>
+
+        <a href="#" class="btn verify-btn">Verify</a>
+        <a href="#" class="btn not-now-btn">Not Now</a>
+      </div>
+    </div>
+
+    <script>
+      let timeLeft = 300;
+
+      function updateTimer() {
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+
+        document.getElementById("timer").textContent = minutes + ":" + seconds;
+
+        timeLeft--;
+
+        if (timeLeft < 0) {
+          clearInterval(timerInterval);
+          document.getElementById("timer").textContent = "Time's up!";
+        }
+      }
+
+      let timerInterval = setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>

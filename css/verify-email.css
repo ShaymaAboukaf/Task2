@@ -1,0 +1,118 @@
+body {
+  height: 100vh;
+  background-color: #aaa;
+}
+
+.verify-email {
+  max-width: 635px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 4.8rem;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.verify-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.verify-code {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.code-input {
+  width: 86px;
+  height: 55px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border: 1px solid #d9d9d7;
+  border-radius: 20px;
+  text-align: center;
+  outline: none;
+}
+
+.code-input::placeholder {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #292c2d;
+}
+
+#timer {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #2387c2;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.received-code {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.received-code a {
+  text-decoration: underline;
+  color: #f3704a;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  padding: 1.2rem 0;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  transition: 0.3s;
+}
+
+.verify-btn:link,
+.verify-btn:visited {
+  background-color: #2387c2;
+  color: #fff;
+  border: 1px solid #2387c2;
+}
+
+.verify-btn:hover,
+.verify-btn:active {
+  background-color: #fff;
+  color: #2387c2;
+}
+
+.not-now-btn:link,
+.not-now-btn:visited {
+  background-color: #fff;
+  color: #2387c2;
+  border: 1px solid #2387c2;
+}
+
+.not-now-btn:hover,
+.not-now-btn:active {
+  background-color: #2387c2;
+  color: #fff;
+}
+
+@media (max-width: 420px) {
+  .verify-email {
+    padding: 4.8rem 2.4rem;
+  }
+  .code-input {
+    width: 50px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .received-code a {
+    display: block;
+    margin-top: 1.2rem;
+  }
+}
