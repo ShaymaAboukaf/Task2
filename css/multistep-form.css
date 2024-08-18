@@ -4,8 +4,7 @@
 }
 
 .tab {
-  display: grid;
-  grid-template-columns: 310px 3fr;
+  display: flex;
   min-height: 100vh;
   background-image: url(../img/gradient-bg.webp);
   background-size: cover;
@@ -17,6 +16,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 310px;
 }
 
 .logo {
@@ -35,6 +35,11 @@
   align-items: center;
 }
 
+.tab:first-child .register-left-text {
+  animation: fadeIn 0.5s 0.75s;
+  animation-fill-mode: backwards;
+}
+
 .steps {
   display: flex;
   flex-direction: column;
@@ -44,6 +49,11 @@
   left: 290px;
   transform: translateY(-50%);
   z-index: 99;
+}
+
+.tab:first-child .steps {
+  animation: fadeIn 0.5s 0.75s;
+  animation-fill-mode: backwards;
 }
 
 .step {
@@ -67,12 +77,13 @@
 
 .register-right {
   padding: 4.8rem 1.6rem;
-  border-radius: 50% 0 0 50%/100% 0 0 100%;
+  border-radius: 15% 0 0 15% / 50% 0 0 50%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  flex: 1;
 }
 
 .register-right-wrapper {
@@ -148,12 +159,13 @@
 
 .next-btn {
   background-color: #2387c2;
-  color: #fff !important;
+  color: #fff;
 }
 
 .next-btn:hover,
 .next-btn:active {
   background-color: #1771a5;
+  color: #fff;
 }
 
 .radio-item {
@@ -294,9 +306,12 @@ input[type="checkbox"]:checked::after {
 .select-menu.active .options {
   display: block;
 }
+
 .sBtn-text {
   font-size: 1.6rem;
+  pointer-events: none;
 }
+
 .options .option {
   display: flex;
   height: 4rem;
@@ -417,10 +432,118 @@ input:not(:checked) + .toggle-label .toggle-inner-active {
   box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.25);
 }
 
+.animated-label {
+  animation: moveTop 0.3s ease-in;
+}
+
+.move-label {
+  animation: moveLabel 0.3s ease-in;
+}
+
+.animated-btn {
+  animation: moveBottom 0.3s ease-in;
+}
+
+.move-btn {
+  animation: moveBtn 0.3s ease-in;
+}
+
+@keyframes moveTop {
+  0% {
+    transform: translate(10rem, 20rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLabel {
+  0% {
+    transform: translate(0);
+  }
+
+  40% {
+    transform: translateY(-0.3rem);
+  }
+
+  100% {
+    transform: translate(10rem, 20rem);
+  }
+}
+
+@keyframes moveBtn {
+  0% {
+    transform: translate(0);
+  }
+
+  40% {
+    transform: translateY(0.3rem);
+  }
+
+  100% {
+    transform: translateY(-10rem);
+  }
+}
+
+@keyframes moveBottom {
+  0% {
+    transform: translateY(-10rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.child-1 {
+  width: 310px;
+  animation: animate 1s;
+}
+
+.child-2 {
+  flex: 1;
+}
+
+@keyframes animate {
+  0% {
+    flex-basis: 600px;
+  }
+
+  100% {
+    flex-basis: 310px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 992px) {
   .tab {
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr; */
+    flex-direction: column;
+  }
+
+  .child-1 {
+    width: 100%;
+    min-height: 180px;
+    animation: none;
+  }
+
+  .tab:first-child .register-left-text {
+    animation: none;
+  }
+
+  .register-left {
+    width: 100%;
   }
 
   .register-left-text {
@@ -434,7 +557,7 @@ input:not(:checked) + .toggle-label .toggle-inner-active {
 
   .steps {
     flex-direction: row;
-    top: 155px;
+    top: 145px;
     left: 50%;
     transform: translateX(-50%);
   }

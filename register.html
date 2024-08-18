@@ -11,75 +11,340 @@
     />
     <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/multistep-form.css" />
     <title>Document</title>
   </head>
   <body>
     <form class="register-form" id="register-form">
-      <div class="register">
-        <div class="register-left">
+      <div class="tab">
+        <div class="register-left child-1">
           <a href="index.html"
             ><img src="img/register-logo.png" alt="" class="logo"
           /></a>
-          <div class="img-wrapper">
-            <img
-              src="./img/Computer login-amico 1.webp"
-              alt=""
-              class="register-img"
-            />
-          </div>
+          <p class="register-left-text">Let's create an account!</p>
+
+          <!-- <div class="white-poly"></div> -->
         </div>
 
-        <div class="register-right">
+        <div class="register-right child-2">
           <div class="register-right-wrapper">
-            <p class="welcome-text">Welcome Back!</p>
-            <p class="register-title">Sign in to your account</p>
+            <p class="welcome-text text-center">Welcome to roomyco!</p>
 
-            <div class="input-group">
-              <img src="./img/telephone-fill.svg" alt="" />
-              <input
-                type="text"
-                placeholder="Whatsapp Number"
-                class="input-control"
-              />
-            </div>
-
-            <div class="input-group">
-              <img src="./img/lock-fill.svg" alt="" />
-              <input
-                type="text"
-                placeholder="Whatsapp Number"
-                class="input-control"
-              />
-            </div>
-
-            <a href="#" class="forgot-password">Forgot Password?</a>
-
-            <div class="register-btns">
-              <div class="d-grid flex-grow-1">
-                <a href="#" class="btn signin-btn">Sign in</a>
+            <div class="form-grid">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="input-control"
+                />
               </div>
-              <div class="d-grid flex-grow-1">
-                <a href="#" class="btn signup-btn">Sign up</a>
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="input-control"
+                />
+              </div>
+
+              <div class="input-group">
+                <img src="./img/telephone-fill.svg" alt="" />
+                <input
+                  type="tel"
+                  placeholder="Whatsapp Number"
+                  class="input-control"
+                />
+              </div>
+
+              <div class="input-group">
+                <img src="./img/lock-fill.svg" alt="" />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="input-control"
+                />
               </div>
             </div>
+            <div class="gender">
+              <p class="m-0">You are?</p>
+              <div class="gender-wrapper">
+                <div class="radio-item">
+                  <input
+                    type="radio"
+                    id="ritema"
+                    name="ritem"
+                    value="ropt1"
+                    checked
+                  />
+                  <label for="ritema">Male</label>
+                </div>
 
-            <p class="or-signin">Or sign in with</p>
-
-            <div class="other-signin">
-              <a href="#" class="signin-social">
-                <img src="./img/Apple.svg" alt="" class="signin-icon" />
-              </a>
-              <a href="#" class="signin-social">
-                <img src="./img/google.svg" alt="" class="signin-icon" />
-              </a>
-              <a href="#" class="signin-social">
-                <img src="./img/fb.svg" alt="" class="signin-icon" />
-              </a>
+                <div class="radio-item">
+                  <input type="radio" id="ritemb" name="ritem" value="ropt2" />
+                  <label for="ritemb">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="d-grid">
+              <button class="btn next-btn" onclick="next()">Next</button>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="tab">
+        <div class="register-left">
+          <a href="index.html"
+            ><img src="img/register-logo.png" alt="" class="logo"
+          /></a>
+          <p class="register-left-text">why are you using Roomyco?</p>
+        </div>
+
+        <div class="register-right">
+          <div class="register-right-wrapper">
+            <p class="title">What you are looking for?</p>
+
+            <div class="list-wrapper">
+              <div class="d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  value="seeker-roomate"
+                  id="seeker-roomate"
+                />
+                <label class="form-check-label" for="seeker-roomate">
+                  Seeker of roommate
+                </label>
+              </div>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" value="seeker-room" id="seeker-room" />
+                <label class="form-check-label" for="seeker-room">
+                  Seeker of room
+                </label>
+              </div>
+              <div class="d-flex align-items-center">
+                <input type="checkbox" value="place-only" id="place-only" />
+                <label class="form-check-label" for="place-only">
+                  I want to list my place only
+                </label>
+              </div>
+            </div>
+
+            <div class="d-grid">
+              <button class="btn next-btn" onclick="next()">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab">
+        <div class="register-left">
+          <a href="index.html"
+            ><img src="img/register-logo.png" alt="" class="logo"
+          /></a>
+          <p class="register-left-text">Tell us more about you</p>
+        </div>
+
+        <div class="register-right">
+          <div class="register-right-wrapper">
+            <div class="mb-5">
+              <p class="label mb-4 animated-label my-label">
+                What is your location?
+              </p>
+              <div class="row gy-4">
+                <div class="col-sm-6">
+                  <div class="select-menu">
+                    <div class="select-btn">
+                      <span class="sBtn-text" data-value="">Country</span>
+                      <img src="./img/caret-down-fill.svg" alt="" />
+                    </div>
+                    <ul class="options">
+                      <li class="option">
+                        <span class="option-text">Emirate</span>
+                      </li>
+                      <li class="option">
+                        <span class="option-text">Syria</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="select-menu">
+                    <div class="select-btn">
+                      <span class="sBtn-text" data-value="">City</span>
+                      <img src="./img/caret-down-fill.svg" alt="" />
+                    </div>
+                    <ul class="options">
+                      <li class="option">
+                        <span class="option-text">Palm Jumeirah</span>
+                      </li>
+                      <li class="option">
+                        <span class="option-text">Marina</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row gy-4 align-items-center mb-5">
+              <div class="col-sm-6">
+                <p class="label">Where are you from?</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text" data-value="">Select</span>
+                    <img src="./img/caret-down-fill.svg" alt="" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <span class="option-text">Palm Jumeirah</span>
+                    </li>
+                    <li class="option">
+                      <span class="option-text">Marina</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row gy-4 align-items-center mb-5">
+              <div class="col-sm-6">
+                <p class="label">What’s your religion?</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text" data-value="">Select</span>
+                    <img src="./img/caret-down-fill.svg" alt="" />
+                  </div>
+                  <ul class="options">
+                    <li class="option">
+                      <span class="option-text">Muslim</span>
+                    </li>
+                    <li class="option">
+                      <span class="option-text">Christian</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <p class="label mb-3">Date of brith</p>
+              <div class="row birth gy-4">
+                <div class="col-sm-4">
+                  <div class="select-menu">
+                    <div class="select-btn">
+                      <span class="sBtn-text" data-value="">Day</span>
+                      <img src="./img/caret-down-fill.svg" alt="" />
+                    </div>
+                    <ul class="options">
+                      <li class="option">
+                        <span class="option-text">1</span>
+                      </li>
+                      <li class="option">
+                        <span class="option-text">2</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="select-menu">
+                    <div class="select-btn">
+                      <span class="sBtn-text" data-value="">Month</span>
+                      <img src="./img/caret-down-fill.svg" alt="" />
+                    </div>
+                    <ul class="options">
+                      <li class="option">
+                        <span class="option-text">1</span>
+                      </li>
+                      <li class="option">
+                        <span class="option-text">2</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="select-menu">
+                    <div class="select-btn">
+                      <span class="sBtn-text" data-value="">Year</span>
+                      <img src="./img/caret-down-fill.svg" alt="" />
+                    </div>
+                    <ul class="options">
+                      <li class="option">
+                        <span class="option-text">1</span>
+                      </li>
+                      <li class="option">
+                        <span class="option-text">2</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row gy-4 align-items-center mb-5">
+              <div class="col-sm-9">
+                <p class="label">Count of people prefer to live with?</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="prefer-people">
+                  <button class="decrement-btn">-</button>
+                  <span class="number">2</span>
+                  <button class="increment-btn">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row gy-4 align-items-center mb-5">
+              <div class="col-sm-6">
+                <p class="label">Do you prefer any pets?</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="toggle-switch">
+                  <input type="checkbox" id="toggle" />
+                  <label for="toggle" class="toggle-label">
+                    <span class="toggle-inner">No</span>
+                    <span class="toggle-inner-active">Yes</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row gy-4 align-items-center mb-5">
+              <div class="col-sm-6">
+                <p class="label">Do you smoke?</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="toggle-switch">
+                  <input type="checkbox" id="smoke" />
+                  <label for="smoke" class="toggle-label">
+                    <span class="toggle-inner">No</span>
+                    <span class="toggle-inner-active">Yes</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="d-grid">
+              <button
+                class="btn next-btn animated-btn my-button"
+                onclick="next()"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step" onclick="goToTab(0)">1</div>
+        <div class="step" onclick="goToTab(1)">2</div>
+        <div class="step" onclick="goToTab(2)">3</div>
+      </div>
     </form>
+    <script src="./bootstrap/bootstrap.bundle.min.js" async></script>
+    <script src="./js/register-form.js"></script>
   </body>
 </html>

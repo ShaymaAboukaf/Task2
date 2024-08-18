@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="register-form" id="register-form">
+      <div class="register">
+        <div class="register-left">
+          <a href="index.html"
+            ><img src="img/register-logo.png" alt="" class="logo"
+          /></a>
+          <div class="img-wrapper">
+            <img
+              src="./img/Computer login-amico 1.webp"
+              alt=""
+              class="register-img"
+            />
+          </div>
+        </div>
+
+        <div class="register-right">
+          <div class="register-right-wrapper">
+            <p class="welcome-text">Welcome Back!</p>
+            <p class="register-title">Sign in to your account</p>
+
+            <div class="input-group">
+              <img src="./img/telephone-fill.svg" alt="" />
+              <input
+                type="text"
+                placeholder="Whatsapp Number"
+                class="input-control"
+              />
+            </div>
+
+            <div class="input-group">
+              <img src="./img/lock-fill.svg" alt="" />
+              <input
+                type="password"
+                placeholder="Password"
+                class="input-control"
+              />
+            </div>
+
+            <a href="#" class="forgot-password">Forgot Password?</a>
+
+            <div class="register-btns">
+              <div class="d-grid flex-grow-1">
+                <button class="btn signin-btn">Sign in</button>
+              </div>
+              <div class="d-grid flex-grow-1">
+                <a href="register.html" class="btn signup-btn">Sign up</a>
+              </div>
+            </div>
+
+            <p class="or-signin">Or sign in with</p>
+
+            <div class="other-signin">
+              <a href="#" class="signin-social">
+                <img src="./img/Apple.svg" alt="" class="signin-icon" />
+              </a>
+              <a href="#" class="signin-social">
+                <img src="./img/google.svg" alt="" class="signin-icon" />
+              </a>
+              <a href="#" class="signin-social">
+                <img src="./img/fb.svg" alt="" class="signin-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      const registerForm = document.querySelector(".register-form");
+
+      registerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (!validateForm()) return false;
+      });
+      document.querySelectorAll("input").forEach((input) => {
+        input.addEventListener("input", function () {
+          this.classList.remove("invalid");
+        });
+      });
+      function validateForm() {
+        // This function deals with validation of the form fields
+
+        const inputs = document.getElementsByTagName("input");
+        // A loop that checks every input field in the current tab:
+        for (i = 0; i < inputs.length; i++) {
+          // If a field is empty...
+          if (inputs[i].value == "") {
+            // add an "invalid" class to the field:
+            inputs[i].className += " invalid";
+            // and set the current valid status to false
+            valid = false;
+          }
+        }
+
+        return valid; // return the valid status
+      }
+    </script>
+  </body>
+</html>
