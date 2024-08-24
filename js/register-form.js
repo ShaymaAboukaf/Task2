@@ -13,7 +13,7 @@ function next() {
   if (!validateForm()) return false;
 
   if (currentTab == x.length - 1) {
-    window.location = "index.html";
+    window.location = "homepage.html";
     return;
   }
 

@@ -66,6 +66,14 @@ a {
   color: #f3704a;
 }
 
+.invalid {
+  background-color: #ffdddd;
+}
+
+.active {
+  color: #035781 !important;
+}
+
 @media (max-width: 1400px) {
   html {
     font-size: 56.25%;
@@ -126,9 +134,4 @@ a {
   .heading-secondary {
     line-height: 1.3;
   }
-}
-
-/* Mark input boxes that gets an error on validation: */
-.invalid {
-  background-color: #ffdddd;
 }

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/general-2.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/home-logo.svg" alt="" class="header-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">See More</a>
+            </li>
+          </ul>
+
+          <div class="header-icons">
+            <a href="#"
+              ><img
+                src="img/heart-fill.svg"
+                alt="red heart"
+                class="header-icon"
+            /></a>
+            <div class="dropdown chat">
+              <button class="dropdown-toggler">
+                <img
+                  src="img/Subtract.svg"
+                  alt="Subtract"
+                  class="header-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <div class="dropdown-header">
+                  <h4 class="dropdown-title">Chats</h4>
+                  <div class="chat-icons">
+                    <button><img src="img/chat-icon.svg" alt="" /></button>
+                    <button><img src="img/chat-dots.svg" alt="" /></button>
+                  </div>
+                </div>
+
+                <ul class="chat-list">
+                  <li>
+                    <a href="#" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+            <a href="#"
+              ><img src="img/bell-fill.svg" alt="bell" class="header-icon"
+            /></a>
+            <div class="dropdown chat menu">
+              <button class="dropdown-toggler">
+                <img
+                  src="img/grid-3x3-gap-fill.svg"
+                  alt="Subtract"
+                  class="header-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <h4 class="dropdown-title mb-5">Menu</h4>
+
+                <ul class="chat-list">
+                  <div class="dropdown">
+                    <button class="change-account-btn">
+                      Change account type
+                    </button>
+                    <ul class="dropdown-list dropdown-list-fixed">
+                      <li class="account-type-item">
+                        <a href="#" class="account-type-link"
+                          ><img src="img/Group 635.png" alt="" />
+                          <p>Seeker of room</p></a
+                        >
+                      </li>
+                      <li class="account-type-item">
+                        <a href="#" class="account-type-link"
+                          ><img src="img/Group 635.png" alt="" />
+                          <p>Seeker of room</p></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/Union.svg" alt="" class="grid-icon" />
+                      <span>My Advertisements</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/Group 636.svg" alt="" class="grid-icon" />
+                      <span>My Plan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/rating.svg" alt="" class="grid-icon" />
+                      <span>Ratings</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <a href="#">
+              <img
+                src="img/Ellipse 88.png"
+                alt=""
+                class="user-profile"
+                class="header-icon"
+              />
+            </a>
+
+            <div class="divider"></div>
+
+            <div class="dropdown">
+              <button class="dropdown-toggler">
+                <span class="dropdown-text">En</span>
+                <img
+                  src="img/caret-down-fill.svg"
+                  alt=""
+                  class="dropdown-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <li><a href="#" class="dropdown-link active">English</a></li>
+                <li><a href="#" class="dropdown-link">Arabic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="chat-container">
+        <div class="chats">
+          <div class="chat-header">
+            <h3 class="header-title">Chats</h3>
+            <div class="icons">
+              <button><img src="img/chat-dots.svg" alt="" /></button>
+              <button class="ms-3"><img src="img/plus-lg.svg" alt="" /></button>
+            </div>
+          </div>
+
+          <form class="chat-search">
+            <div class="input-group">
+              <img src="img/Path 796.svg" alt="" />
+              <input type="text" class="input-search" placeholder="Search" />
+            </div>
+          </form>
+
+          <ul class="chat-list">
+            <li>
+              <a href="chat.html" class="chat-item">
+                <img src="img/person-1.png" alt="" class="user-img" />
+                <div class="ms-3">
+                  <p class="user-name">Ali Saebe</p>
+                  <p class="user-text">I need roommate to..</p>
+                </div>
+                <span class="chat-time">36m</span>
+              </a>
+            </li>
+            <li>
+              <a href="chat.html" class="chat-item">
+                <img src="img/person-1.png" alt="" class="user-img" />
+                <div class="ms-3">
+                  <p class="user-name">Ali Saebe</p>
+                  <p class="user-text">I need roommate to..</p>
+                </div>
+                <span class="chat-time">36m</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="chat-item">
+                <img src="img/person-1.png" alt="" class="user-img" />
+                <div class="ms-3">
+                  <p class="user-name">Ali Saebe</p>
+                  <p class="user-text">I need roommate to..</p>
+                </div>
+                <span class="chat-time">36m</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="conversation">
+          <div class="conversation-header">
+            <div class="user">
+              <img src="img/Ellipse 661.png" alt="" />
+              <div>
+                <p class="username">Rama Kita</p>
+                <p class="active-now">Active Now</p>
+              </div>
+            </div>
+
+            <button class="call-btn">
+              <img src="img/icon/telephone-fill.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="typing">
+            <button class="attach-btn">
+              <img src="img/icon/Attach.svg" alt="" />
+            </button>
+            <form class="typing-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="typing-input"
+                  placeholder="Type something"
+                />
+                <img src="img/icon/Vector.svg" alt="" />
+              </div>
+            </form>
+            <button>
+              <img src="img/icon/Frame 1654.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="profile-box">
+            <img src="img/Ellipse 661.png" alt="" class="profile-img" />
+            <p class="profile-name">Rama Kita</p>
+            <div class="profile-icons">
+              <div class="text-center">
+                <a href="#" class="profile-btn">
+                  <img src="img/person-fill.svg" alt="" />
+                </a>
+                <p>Profile</p>
+              </div>
+              <div class="text-center">
+                <button class="profile-btn">
+                  <img src="img/bell-fill.svg" alt="" />
+                </button>
+                <p>Mute</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

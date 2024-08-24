@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="lib/swiper js/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/general-2.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/home-logo.svg" alt="" class="header-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">See More</a>
+            </li>
+          </ul>
+
+          <div class="header-icons">
+            <a href="#"
+              ><img
+                src="img/heart-fill.svg"
+                alt="red heart"
+                class="header-icon"
+            /></a>
+            <div class="dropdown chat">
+              <button class="dropdown-toggler">
+                <img
+                  src="img/Subtract.svg"
+                  alt="Subtract"
+                  class="header-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <div class="dropdown-header">
+                  <h4 class="dropdown-title">Chats</h4>
+                  <div class="chat-icons">
+                    <button><img src="img/chat-icon.svg" alt="" /></button>
+                    <button><img src="img/chat-dots.svg" alt="" /></button>
+                  </div>
+                </div>
+
+                <ul class="chat-list">
+                  <li>
+                    <a href="chat.html" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="chat.html" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+            <a href="#"
+              ><img src="img/bell-fill.svg" alt="bell" class="header-icon"
+            /></a>
+            <div class="dropdown chat menu">
+              <button class="dropdown-toggler">
+                <img
+                  src="img/grid-3x3-gap-fill.svg"
+                  alt="Subtract"
+                  class="header-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <h4 class="dropdown-title mb-5">Menu</h4>
+
+                <ul class="chat-list">
+                  <div class="dropdown">
+                    <button class="change-account-btn">
+                      Change account type
+                    </button>
+                    <ul class="dropdown-list dropdown-list-fixed">
+                      <li class="account-type-item">
+                        <a href="#" class="account-type-link"
+                          ><img src="img/Group 635.png" alt="" />
+                          <p>Seeker of room</p></a
+                        >
+                      </li>
+                      <li class="account-type-item">
+                        <a href="#" class="account-type-link"
+                          ><img src="img/Group 635.png" alt="" />
+                          <p>Seeker of room</p></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/Union.svg" alt="" class="grid-icon" />
+                      <span>My Advertisements</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/Group 636.svg" alt="" class="grid-icon" />
+                      <span>My Plan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/rating.svg" alt="" class="grid-icon" />
+                      <span>Ratings</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <a href="#">
+              <img
+                src="img/Ellipse 88.png"
+                alt=""
+                class="user-profile"
+                class="header-icon"
+              />
+            </a>
+
+            <div class="divider"></div>
+
+            <div class="dropdown">
+              <button class="dropdown-toggler">
+                <span class="dropdown-text">En</span>
+                <img
+                  src="img/caret-down-fill.svg"
+                  alt=""
+                  class="dropdown-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <li><a href="#" class="dropdown-link active">English</a></li>
+                <li><a href="#" class="dropdown-link">Arabic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section-hero">
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/Rectangle 1016.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/Rectangle 1016.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/Property 1=Variant3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#hero-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#hero-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+        <div class="hero-box">
+          <div class="hero-search">
+            <form class="hero-form">
+              <div class="input-group">
+                <img src="img/geo-alt-fill.svg" alt="" />
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Dubai,Emirates"
+                />
+                <button class="clear-search-btn" type="button">
+                  <img src="img/x-circle.svg" alt="" class="ms-auto" />
+                </button>
+              </div>
+
+              <button class="search-btn">Search</button>
+            </form>
+          </div>
+          <a href="#" class="find-partner">FIND YOUR ROOM PARTNER</a>
+        </div>
+      </section>
+
+      <section class="section-cities">
+        <img src="img/wavy-lines.svg" alt="" class="wavy-lines" />
+        <div class="cities-container">
+          <h2 class="heading-secondary text-center">
+            Explore our most popular cities
+          </h2>
+
+          <div class="swiper-container">
+            <div class="swiper cities-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/Rectangle 1024.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/Rectangle 1025.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/Rectangle 1026.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/Rectangle 1024.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/Rectangle 1025.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-prev arrow">
+              <img src="img/icon/Arrow 2.svg" alt="" />
+            </div>
+            <div class="slider-next arrow">
+              <img src="img/icon/Arrow 1.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-recommmend">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="heading-secondary mb-3">Recommend for you</h2>
+            <p class="subheading">Best rooms that match your need</p>
+          </div>
+
+          <div class="swiper recommend-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="swiper-slide-content">
+                  <p class="room-name">Shared room, Sharjah</p>
+                  <div class="price-box">
+                    <p class="price"><span>$ 1,000</span> /month</p>
+                    <div class="ratings">
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/Path 802.svg" alt="" />
+                      <img src="img/Path 801.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="room-number">
+                    <div class="room-count">
+                      <img
+                        src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div class="room-count">
+                      <img
+                        src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="swiper-slide-content">
+                  <p class="room-name">Shared room, Sharjah</p>
+                  <div class="price-box">
+                    <p class="price"><span>$ 1,000</span> /month</p>
+                    <div class="ratings">
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/Path 802.svg" alt="" />
+                      <img src="img/Path 801.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="room-number">
+                    <div class="room-count">
+                      <img
+                        src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div class="room-count">
+                      <img
+                        src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="swiper-slide-content">
+                  <p class="room-name">Shared room, Sharjah</p>
+                  <div class="price-box">
+                    <p class="price"><span>$ 1,000</span> /month</p>
+                    <div class="ratings">
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/Path 802.svg" alt="" />
+                      <img src="img/Path 801.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="room-number">
+                    <div class="room-count">
+                      <img
+                        src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div class="room-count">
+                      <img
+                        src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="swiper-slide-content">
+                  <p class="room-name">Shared room, Sharjah</p>
+                  <div class="price-box">
+                    <p class="price"><span>$ 1,000</span> /month</p>
+                    <div class="ratings">
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/full-star.svg" alt="" />
+                      <img src="img/Path 802.svg" alt="" />
+                      <img src="img/Path 801.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="room-number">
+                    <div class="room-count">
+                      <img
+                        src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>2 Bedroom</span>
+                    </div>
+                    <div class="room-count">
+                      <img
+                        src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""
+                      />
+                      <span>1 Bathroom</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-roommate">
+        <div class="container">
+          <h2 class="heading-secondary text-center">Available Roommate</h2>
+
+          <div class="image-accordion">
+            <h2 class="image-accordion-title">
+              Best roommates that match your need
+            </h2>
+            <div class="roommate active">
+              <p class="rotate-name">Ali Saebe</p>
+              <div class="roommate-content">
+                <div>
+                  <p class="roommate-name mb-4">Ali Saebe</p>
+                  <div class="d-flex align-items-center">
+                    <img src="img/icon/Path 3612.svg" alt="" width="12" />
+                    <span class="px-3 border-end border-white">Dubai</span>
+                    <span class="ps-3">25 years old</span>
+                  </div>
+                </div>
+
+                <div>
+                  <img
+                    src="img/icon/Path 805.svg"
+                    alt=""
+                    class="mb-4"
+                    width="26"
+                  />
+                  <p>4.8</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="roommate">
+              <p class="rotate-name">Ali Saebe</p>
+              <div class="roommate-content">
+                <div>
+                  <p class="roommate-name mb-4">Ali Saebe</p>
+                  <div class="d-flex align-items-center">
+                    <img src="img/icon/Path 3612.svg" alt="" width="12" />
+                    <span class="px-3 border-end border-white">Dubai</span>
+                    <span class="ps-3">25 years old</span>
+                  </div>
+                </div>
+
+                <div>
+                  <img
+                    src="img/icon/Path 805.svg"
+                    alt=""
+                    class="mb-4"
+                    width="26"
+                  />
+                  <p>4.8</p>
+                </div>
+              </div>
+            </div>
+            <div class="roommate">
+              <p class="rotate-name">Ali Saebe</p>
+              <div class="roommate-content">
+                <div>
+                  <p class="roommate-name mb-4">Ali Saebe</p>
+                  <div class="d-flex align-items-center">
+                    <img src="img/icon/Path 3612.svg" alt="" width="12" />
+                    <span class="px-3 border-end border-white">Dubai</span>
+                    <span class="ps-3">25 years old</span>
+                  </div>
+                </div>
+
+                <div>
+                  <img
+                    src="img/icon/Path 805.svg"
+                    alt=""
+                    class="mb-4"
+                    width="26"
+                  />
+                  <p>4.8</p>
+                </div>
+              </div>
+            </div>
+            <div class="roommate">
+              <p class="rotate-name">Ali Saebe</p>
+              <div class="roommate-content">
+                <div>
+                  <p class="roommate-name mb-4">Ali Saebe</p>
+                  <div class="d-flex align-items-center">
+                    <img src="img/icon/Path 3612.svg" alt="" width="12" />
+                    <span class="px-3 border-end border-white">Dubai</span>
+                    <span class="ps-3">25 years old</span>
+                  </div>
+                </div>
+
+                <div>
+                  <img
+                    src="img/icon/Path 805.svg"
+                    alt=""
+                    class="mb-4"
+                    width="26"
+                  />
+                  <p>4.8</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="logo-col">
+            <a href="Homepage.html" class="footer-logo"
+              ><img src="./img/home-logo.svg" alt="logo" class="logo"
+            /></a>
+            <p class="footer-description">
+              Find your prefer room and choose roommate who agree.
+            </p>
+            <ul class="social-links">
+              <li>
+                <a href="www.instagram.com" target="_blank"
+                  ><img src="img/icon/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="www.facebook.com" target="_blank"
+                  ><img src="img/icon/facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="www.twitter.com" target="_blank"
+                  ><img src="img/icon/twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="www.tiktok.com" target="_blank"
+                  ><img src="img/icon/twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="www.whatsapp.com" target="_blank"
+                  ><img src="img/icon/whatsapp.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+            <a href="www.Romyco.com" class="site footer-link">www.Romyco.com</a>
+          </div>
+
+          <div class="nav-col">
+            <p class="footer-heading">Terms &amp; Policies</p>
+            <ul class="footer-nav">
+              <li><a href="#" class="footer-link">Terms of services</a></li>
+              <li><a href="#" class="footer-link">Privacy policy</a></li>
+              <li><a href="#" class="footer-link">Cookie policy</a></li>
+            </ul>
+          </div>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Contact</p>
+            <ul class="footer-nav">
+              <li class="contact">
+                <a href="mailto:roomyco@room.com" class="footer-link contact">
+                  <img src="img/icon/envelope-fill.svg" alt="" />
+                  <span>roomyco@room.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+971 586 834 566" class="footer-link contact">
+                  <img src="img/icon/telephone-fill.svg" alt="" />
+                  <span>+971 586 834 56</span></a
+                >
+              </li>
+              <li class="contact">
+                <img src="img/geo-alt-fill.svg" alt="" /><span class="location"
+                  >Emirates</span
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="copyright">
+          <p>All rights are save 2024 by company.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js" async></script>
+    <script src="lib/swiper js/swiper-bundle.min.js"></script>
+
+    <script>
+      document
+        .querySelector(".clear-search-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".search-input").value = "";
+        });
+
+      const swiper = new Swiper(".cities-swiper", {
+        navigation: {
+          nextEl: ".slider-next",
+          prevEl: ".slider-prev",
+        },
+        breakpoints: {
+          450: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+
+          1100: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+          },
+        },
+      });
+
+      const recommendSwiper = new Swiper(".recommend-swiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 30,
+
+        breakpoints: {
+          620: {
+            slidesPerView: 2.3,
+            spaceBetween: 50,
+          },
+
+          1200: {
+            slidesPerView: 3.5,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      const roommateSwiper = new Swiper(".roommate-swiper", {
+        slidesPerView: 8,
+        spaceBetween: 30,
+      });
+
+      function removeActive() {
+        document.querySelectorAll(".roommate").forEach((item) => {
+          item.classList.remove("active");
+        });
+      }
+
+      document.querySelectorAll(".roommate").forEach((item) => {
+        item.addEventListener("click", function (e) {
+          removeActive();
+          e.target.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
