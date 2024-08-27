@@ -14,13 +14,15 @@
   font-weight: 500;
   padding: 1rem 2rem;
   background-color: rgb(255, 254, 249, 0.6);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   z-index: 1000;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-brand svg {
@@ -352,7 +354,7 @@
 /**************************/
 
 .section-cities {
-  padding: 9.6rem 0;
+  padding: 6.5rem 0;
   position: relative;
 }
 
@@ -437,7 +439,7 @@
 /**************************/
 
 .section-recommmend {
-  padding: 9.6rem 0;
+  padding-bottom: 6.5rem;
   position: relative;
 }
 
@@ -523,7 +525,7 @@
 /**************************/
 
 .section-roommate {
-  padding: 9.6rem 0;
+  padding-bottom: 6.5rem;
   position: relative;
 }
 

@@ -221,7 +221,7 @@
               </a>
             </li>
             <li>
-              <a href="chat.html" class="chat-item">
+              <a href="chat.html" class="chat-item active">
                 <img src="img/person-1.png" alt="" class="user-img" />
                 <div class="ms-3">
                   <p class="user-name">Ali Saebe</p>
@@ -245,7 +245,9 @@
         <div class="conversation">
           <div class="conversation-header">
             <div class="user">
-              <img src="img/Ellipse 661.png" alt="" />
+              <div class="img-box">
+                <img src="img/Ellipse 661.png" alt="" />
+              </div>
               <div>
                 <p class="username">Rama Kita</p>
                 <p class="active-now">Active Now</p>
@@ -256,24 +258,56 @@
               <img src="img/icon/telephone-fill.svg" alt="" />
             </button>
           </div>
+          <div class="typing-container">
+            <div class="person-type">
+              <p class="type-text">
+                Hello Ranim, I watched your ad that you have housing. And I want
+                to get to know you more
+              </p>
 
-          <div class="typing">
-            <button class="attach-btn">
-              <img src="img/icon/Attach.svg" alt="" />
-            </button>
-            <form class="typing-form">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="typing-input"
-                  placeholder="Type something"
-                />
-                <img src="img/icon/Vector.svg" alt="" />
-              </div>
-            </form>
-            <button>
-              <img src="img/icon/Frame 1654.svg" alt="" />
-            </button>
+              <p class="type-time">10:45 PM</p>
+            </div>
+
+            <div class="person-type">
+              <p class="type-text type-text-2">
+                Oh! welcome, do you want specific details?
+              </p>
+
+              <p class="type-time type-time-2">
+                <span>11:30 PM</span>
+                <img src="img//icon/check-circle-fill.svg" alt="" width="14" />
+              </p>
+            </div>
+            <div class="person-type">
+              <p class="type-text">can you send picture to me please!</p>
+
+              <p class="type-time">11:45 PM</p>
+            </div>
+
+            <div class="photos">
+              <img src="img/Rectangle 994.png" alt="" />
+              <img src="img/Rectangle 995.png" alt="" />
+              <img src="img/Rectangle 996.png" alt="" />
+              <img src="img/Rectangle 997.png" alt="" />
+            </div>
+            <div class="typing">
+              <button class="attach-btn">
+                <img src="img/icon/Attach.svg" alt="" />
+              </button>
+              <form class="typing-form">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="typing-input"
+                    placeholder="Type something"
+                  />
+                  <img src="img/icon/Vector.svg" alt="" />
+                </div>
+              </form>
+              <button>
+                <img src="img/icon/Frame 1654.svg" alt="" />
+              </button>
+            </div>
           </div>
         </div>
         <div class="profile">
@@ -296,7 +330,21 @@
             </div>
           </div>
         </div>
+        <div class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </div>
     </div>
+    <script src="./bootstrap/bootstrap.bundle.min.js" async></script>
+
+    <script>
+      document
+        .querySelector(".menu-icon")
+        .addEventListener("click", function () {
+          document.querySelector(".chats").classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
