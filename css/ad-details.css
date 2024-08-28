@@ -1,0 +1,263 @@
+html {
+  scroll-padding: 70px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-image: linear-gradient(#f8f4db, #fffffe);
+}
+
+.ads-container {
+  max-width: 130rem;
+  margin: auto;
+  padding: 0 1.6rem;
+}
+
+.ad-details {
+  display: grid;
+  grid-template-columns: 1fr 40rem;
+  gap: 2rem;
+  align-items: start;
+  padding: 8rem 0;
+}
+
+.carousel-btn {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  background-color: rgba(217, 217, 217, 0.75);
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn img {
+  width: 3rem;
+}
+
+.carousel-control-prev {
+  left: 8rem;
+}
+
+.carousel-control-next {
+  right: 8rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  column-gap: 4.8rem;
+  row-gap: 1.6rem;
+  flex-wrap: wrap;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #dad6c8;
+}
+
+.tab-btn {
+  border: none;
+  background: transparent;
+  font-weight: 300;
+  color: inherit;
+}
+
+.ad-item {
+  padding: 2.4rem 0;
+}
+
+.ad-item:not(:last-child) {
+  border-bottom: 1px solid #dad6c8;
+}
+
+.ad-item.location {
+  border-bottom: none;
+}
+
+.ad-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.ratings img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.availability-budget-title {
+  font-weight: 300;
+  color: #707070;
+}
+
+.availability-budget-value {
+  font-size: 2rem;
+}
+
+.location {
+  padding: 2.4rem 0;
+}
+
+.city {
+  color: #707070;
+  font-weight: 300;
+}
+
+.map-box {
+  border: 1px solid #dad6c8;
+}
+
+.map {
+  width: 100%;
+}
+
+.roommate-details {
+  padding: 2.8rem 2rem;
+  background-color: #f2eacc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.roommate-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.roommate-img {
+  width: 8.6rem;
+  height: 8.6rem;
+  border-radius: 50%;
+}
+
+.roommate-name {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.roommate-birth {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.roommate-age {
+  color: #5f6368;
+}
+
+.life-style {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.life-style p {
+  margin: 0;
+}
+
+.life-style-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.life-style-list p {
+  font-weight: 300;
+  margin: 0;
+}
+
+.life-style-list span {
+  color: #5f6368;
+}
+
+.send-message-form {
+  margin-bottom: 1.8rem;
+}
+
+.write-message {
+  width: 100%;
+  padding: 1rem;
+  height: 10.8rem;
+  border: 1px solid #cac6b7;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  margin-bottom: 1.8rem;
+}
+
+.write-message::placeholder {
+  font-family: inherit;
+  color: #aeaeae;
+}
+
+.primary-btn {
+  background-color: #2387c2;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #2376a7;
+  color: #fff;
+}
+
+.secondary-btn {
+  border: 1px solid #2387c2;
+  color: #2387c2;
+  background-color: transparent;
+}
+
+.secondary-btn:hover {
+  border: 1px solid #2387c2;
+  background-color: #2387c2;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .ad-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .carousel-control-prev {
+    left: 2rem;
+  }
+  .carousel-control-next {
+    right: 2rem;
+  }
+
+  .grid-col-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}

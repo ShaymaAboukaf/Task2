@@ -1,0 +1,528 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 95%; */
+  max-width: 129.6rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 254, 249, 0.6);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand svg {
+  height: 3.8rem;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-nav .nav-link:link,
+.navbar-nav .nav-link:visited {
+  font-size: 2rem;
+  font-weight: 500;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+  color: #035781;
+}
+
+.navbar-nav .nav-link.active {
+  color: #035781 !important;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-icon {
+  height: 2.4rem;
+}
+
+.divider {
+  width: 1px;
+  height: 3rem;
+  background-color: #000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.chat .dropdown-list {
+  padding: 2rem 0;
+  min-width: 40rem;
+}
+
+.chat-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.chat-item {
+  display: grid;
+  grid-template-columns: 6rem 1fr 5rem;
+  align-items: center;
+  padding: 0 4rem;
+  transition: 0.3s;
+}
+
+.dropdown-list-notifications {
+  width: 85.4rem;
+  height: 65vh;
+  overflow: auto;
+}
+
+.dropdown-list-notifications .dropdown-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.nav-tabs {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  color: inherit;
+  padding: 0.5rem 2rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgba(35, 135, 194, 0.25);
+  color: #2387c2;
+}
+
+.notification-box {
+  margin-bottom: 2rem;
+}
+
+.notification-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  padding: 0 2rem;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 5rem 0 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.notification-imgs {
+  display: flex;
+}
+
+.notification-imgs img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+.notification-imgs img:nth-child(2) {
+  margin-left: -4rem;
+}
+
+.notification-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  flex: 1;
+}
+
+.notification-text p {
+  color: #292c2d;
+}
+
+.notification-item::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #2387c2;
+
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.8rem 4rem;
+  border-radius: 1.7rem;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #2387c2;
+  color: #f6f6f6;
+}
+
+.delete-btn {
+  background-color: #d9d9d7;
+  color: #292c2d;
+}
+
+.notification-text span {
+  color: #707070;
+}
+
+.notification-unknown-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #eaeaea;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-unknown-img img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.noti-avatar {
+  flex-basis: 10rem;
+}
+
+.confirm-request {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-img {
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.user-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.user-name,
+.user-text {
+  color: #292c2d;
+}
+
+.user-text,
+.chat-time {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.chat-time {
+  color: #707070;
+  align-self: end;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.dropdown-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.chat-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chat-icons button {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background-color: #d3ceba;
+  border: none;
+}
+
+.chat-icons img {
+  width: 1.6rem;
+}
+
+.change-account-btn {
+  border: none;
+  background-color: transparent;
+  padding: 1.5rem 0;
+}
+
+.dropdown-list-fixed {
+  position: static !important;
+}
+
+.account-type-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.account-type-link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: #292c2d;
+  transition: 0.3s;
+}
+
+.menu .dropdown-list {
+  padding: 2rem 4rem;
+}
+
+.menu-link {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: 0.3s;
+}
+
+.menu-link img {
+  width: 2.4rem;
+}
+
+.dropdown-toggler {
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-icon {
+  width: 1.6rem;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 1rem 0 2rem 0;
+  margin: 0;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  min-width: 11rem;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-link {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  color: inherit;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.dropdown-link:hover,
+.menu-link:hover,
+.account-type-link:hover {
+  color: #035781;
+}
+
+/**************************/
+/* Footer */
+/**************************/
+
+.footer {
+  padding: 3.2rem 0 0;
+  font-size: 2rem;
+  font-weight: 500;
+  background-image: linear-gradient(#e8e8e8, #f6f6f6);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.footer-logo svg {
+  height: 3rem;
+}
+
+.footer-description {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1.6rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 2.4rem;
+  list-style: none;
+  max-width: 30rem;
+}
+
+.social-links svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  transition: 0.3s;
+}
+
+.site {
+  color: inherit;
+}
+
+.contact-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: url(../img/icon/Group\ 637.svg);
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 0;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #2387c2;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.contact span {
+  font-size: 2rem;
+}
+
+.copyright {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 2.4rem 0;
+  border: 1px solid #aeaeae;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .header-icons {
+    justify-content: center;
+  }
+
+  .header .dropdown {
+    position: static;
+  }
+
+  .dropdown-list {
+    left: 0;
+    width: 100%;
+    top: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

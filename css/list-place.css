@@ -1,0 +1,28 @@
+.user-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.city-name {
+  color: #5f6368;
+}
+
+.life-style-list li {
+  border: 1px solid #2387c2;
+  color: #2387c2;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  font-weight: 300;
+}
+
+.description {
+  font-weight: 300;
+  color: #5f6368;
+  margin-bottom: 2.4rem;
+}
+
+.description span {
+  color: #292c2d;
+}

@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="lib/swiper js/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/general-2.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/homepage.css" />
@@ -105,9 +106,232 @@
               </ul>
             </div>
 
-            <a href="#"
-              ><img src="img/bell-fill.svg" alt="bell" class="header-icon"
-            /></a>
+            <div class="dropdown chat">
+              <button class="dropdown-toggler">
+                <img src="img/bell-fill.svg" alt="bell" class="header-icon" />
+              </button>
+
+              <ul class="dropdown-list dropdown-list-notifications">
+                <div class="dropdown-header">
+                  <h4 class="dropdown-title">Notifications</h4>
+                  <div class="chat-icons">
+                    <button><img src="img/chat-dots.svg" alt="" /></button>
+                  </div>
+                </div>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      All
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                    >
+                      Unread
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                    tabindex="0"
+                  >
+                    <div class="notification-box">
+                      <h4 class="notification-title">New</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar notification-imgs">
+                            <img src="img/Ellipse 646.png" alt="" />
+                            <img src="img/Ellipse 661.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <p>
+                              There are a Roommates who matches your profile.
+                              Check it out now!
+                            </p>
+                            <span>11m</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="notification-box">
+                      <h4 class="notification-title">Today</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img src="img/person-fill.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <p>Someone adding your ad to favorites!</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="notification-box">
+                      <h4 class="notification-title">Older</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="notification-imgs noti-avatar">
+                            <img src="img/person-1.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <p>Ali Saebe gave you a rating.</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img
+                                src="img/icon/envelope-fill-black.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <p>You have a new message!</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="notification-imgs noti-avatar">
+                            <img src="img/Ellipse 651.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <p>Dema doghouz request to follow you.</p>
+                            <span>14h</span>
+                          </div>
+                          <div class="confirm-request">
+                            <div class="confirm-btn button">Confirm</div>
+                            <div class="delete-btn button">Delete</div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img src="img/person-fill.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <p>Someone adding your ad to favorites!</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="notification-imgs noti-avatar">
+                            <img src="img/person-1.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <p>Ali Saebe gave you a rating.</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img
+                                src="img/icon/envelope-fill-black.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <p>You have a new message!</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                    tabindex="0"
+                  >
+                    <div class="notification-box">
+                      <h4 class="notification-title">New</h4>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar notification-imgs">
+                            <img src="img/Ellipse 646.png" alt="" />
+                            <img src="img/Ellipse 661.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <p>
+                              There are a Roommates who matches your profile.
+                              Check it out now!
+                            </p>
+                            <span>11m</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="notification-box">
+                      <h4 class="notification-title">Today</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img src="img/person-fill.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <p>Someone adding your ad to favorites!</p>
+                            <span>14h</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
             <div class="dropdown chat menu">
               <button class="dropdown-toggler">
                 <img
@@ -259,7 +483,9 @@
               <button class="search-btn">Search</button>
             </form>
           </div>
-          <a href="#" class="find-partner">FIND YOUR ROOM PARTNER</a>
+          <a href="list-place.html" class="find-partner"
+            >FIND YOUR ROOM PARTNER</a
+          >
         </div>
       </section>
 
@@ -557,7 +783,7 @@
       <div class="container">
         <div class="footer-grid">
           <div class="logo-col">
-            <a href="Homepage.html" class="footer-logo"
+            <a href="homepage.html" class="footer-logo"
               ><img src="./img/home-logo.svg" alt="logo" class="logo"
             /></a>
             <p class="footer-description">
