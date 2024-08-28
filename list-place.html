@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
     <link rel="stylesheet" href="lib/swiper js/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/shared.css" />
@@ -526,7 +527,7 @@
             <h3 class="heading-tertiary">Location</h3>
             <p class="city">Al Aweer, Dubai</p>
             <div class="map-box">
-              <img src="img/Rectangle 1050.png" alt="" class="map" />
+              <div id="map"></div>
             </div>
           </div>
 
@@ -703,7 +704,20 @@
       </div>
     </footer>
 
+    <script src="lib/leaflet/leaflet.js"></script>
+
+    <script>
+      var map = L.map("map").setView([51.505, -0.09], 13);
+
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      L.marker([51.5, -0.09]).addTo(map);
+    </script>
     <script src="./bootstrap/bootstrap.bundle.min.js" async></script>
     <script src="lib/swiper js/swiper-bundle.min.js"></script>
+    <!-- AIzaSyCf0BIIvMDcb5Mjt-Awg41L2UxNu6XJ7SQ -->
   </body>
 </html>

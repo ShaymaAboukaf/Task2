@@ -124,7 +124,8 @@ body {
   border: 1px solid #dad6c8;
 }
 
-.map {
+#map {
+  height: 55rem;
   width: 100%;
 }
 
