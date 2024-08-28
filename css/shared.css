@@ -68,6 +68,10 @@
   background-color: #000;
 }
 
+.navbar-toggler {
+  font-size: 2rem;
+}
+
 .dropdown {
   position: relative;
 }
@@ -143,7 +147,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
   padding: 0 5rem 0 3rem;
   margin-bottom: 2rem;
@@ -168,6 +171,11 @@
   font-size: 1.6rem;
   font-weight: 400;
   flex: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .notification-text p {
@@ -518,10 +526,18 @@
 
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
 }
 
 @media (max-width: 500px) {
+  .dropdown-list-notifications {
+    height: 50vh;
+  }
+
+  .button {
+    padding: 0.8rem 2rem;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
   }
