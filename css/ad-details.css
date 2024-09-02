@@ -217,28 +217,6 @@ body {
   color: #aeaeae;
 }
 
-.primary-btn {
-  background-color: #2387c2;
-  color: #fff;
-}
-
-.primary-btn:hover {
-  background-color: #2376a7;
-  color: #fff;
-}
-
-.secondary-btn {
-  border: 1px solid #2387c2;
-  color: #2387c2;
-  background-color: transparent;
-}
-
-.secondary-btn:hover {
-  border: 1px solid #2387c2;
-  background-color: #2387c2;
-  color: #fff;
-}
-
 @media (max-width: 992px) {
   .ad-details {
     grid-template-columns: 1fr;

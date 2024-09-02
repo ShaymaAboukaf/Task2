@@ -438,11 +438,40 @@
 
     <main>
       <section class="section-hero">
-        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="hero-box">
+          <div class="hero-search">
+            <form class="hero-form">
+              <div class="input-group">
+                <img src="img/geo-alt-fill.svg" alt="" />
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Dubai,Emirates"
+                />
+                <button class="clear-search-btn" type="button">
+                  <img src="img/x-circle.svg" alt="" class="ms-auto" />
+                </button>
+              </div>
+
+              <button class="search-btn">Search</button>
+            </form>
+          </div>
+          <a href="list-place.html" class="find-partner"
+            >FIND YOUR ROOM PARTNER</a
+          >
+        </div>
+        <div
+          id="hero-carousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="1000"
+          data-bs-transition="0.5s ease-out"
+          data-bs-pause="false"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="img/Rectangle 1016.png"
+                src="img/Property 1=Default.png"
                 class="d-block w-100"
                 alt="..."
               />
@@ -485,28 +514,6 @@
             ></button>
           </div>
         </div>
-        <div class="hero-box">
-          <div class="hero-search">
-            <form class="hero-form">
-              <div class="input-group">
-                <img src="img/geo-alt-fill.svg" alt="" />
-                <input
-                  type="text"
-                  class="search-input"
-                  placeholder="Dubai,Emirates"
-                />
-                <button class="clear-search-btn" type="button">
-                  <img src="img/x-circle.svg" alt="" class="ms-auto" />
-                </button>
-              </div>
-
-              <button class="search-btn">Search</button>
-            </form>
-          </div>
-          <a href="list-place.html" class="find-partner"
-            >FIND YOUR ROOM PARTNER</a
-          >
-        </div>
       </section>
 
       <section class="section-cities">
@@ -516,33 +523,50 @@
             Explore our most popular cities
           </h2>
 
-          <div class="swiper-container">
-            <div class="swiper cities-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+          <div class="slider">
+            <div class="slider-slide">
+              <div class="cities">
+                <div>
                   <img src="img/Rectangle 1024.png" alt="" />
+                  <p>Sharjah</p>
                 </div>
-                <div class="swiper-slide">
+                <div>
                   <img src="img/Rectangle 1025.png" alt="" />
+                  <p>Dubai</p>
                 </div>
-                <div class="swiper-slide">
+                <div>
                   <img src="img/Rectangle 1026.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/Rectangle 1024.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/Rectangle 1025.png" alt="" />
+                  <p>Ajman</p>
                 </div>
               </div>
             </div>
 
-            <div class="slider-prev arrow">
+            <div class="slider-slide">
+              <div class="cities">
+                <div>
+                  <img src="img/Rectangle 1026.png" alt="" />
+                  <p>Abu Dhabi</p>
+                </div>
+                <div>
+                  <img src="img/Rectangle 1024.png" alt="" />
+                  <p>Dubai</p>
+                </div>
+                <div>
+                  <img src="img/Rectangle 1025.png" alt="" />
+                  <p>Alsharjah</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="slider__btn slider__btn--left">
               <img src="img/icon/Arrow 2.svg" alt="" />
-            </div>
-            <div class="slider-next arrow">
+            </button>
+            <button class="slider__btn slider__btn--right">
               <img src="img/icon/Arrow 1.svg" alt="" />
-            </div>
+            </button>
+            <!-- <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button> -->
+            <div class="dots"></div>
           </div>
         </div>
       </section>
@@ -557,7 +581,14 @@
           <div class="swiper recommend-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="img-box">
+                  <div class="img-overlay">
+                    <button class="add-favorite-btn">
+                      <img src="img/heart-fill.svg" alt="" />
+                    </button>
+                  </div>
+                  <img src="img/Rectangle 1028.png" alt="" />
+                </div>
                 <div class="swiper-slide-content">
                   <p class="room-name">Shared room, Sharjah</p>
                   <div class="price-box">
@@ -590,7 +621,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="img-box">
+                  <div class="img-overlay">
+                    <button class="add-favorite-btn">
+                      <img src="img/heart-fill.svg" alt="" />
+                    </button>
+                  </div>
+                  <img src="img/Rectangle 1028.png" alt="" />
+                </div>
                 <div class="swiper-slide-content">
                   <p class="room-name">Shared room, Sharjah</p>
                   <div class="price-box">
@@ -623,7 +661,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="img-box">
+                  <div class="img-overlay">
+                    <button class="add-favorite-btn">
+                      <img src="img/heart-fill.svg" alt="" />
+                    </button>
+                  </div>
+                  <img src="img/Rectangle 1028.png" alt="" />
+                </div>
                 <div class="swiper-slide-content">
                   <p class="room-name">Shared room, Sharjah</p>
                   <div class="price-box">
@@ -656,7 +701,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/Rectangle 1028.png" alt="" />
+                <div class="img-box">
+                  <div class="img-overlay">
+                    <button class="add-favorite-btn">
+                      <img src="img/heart-fill.svg" alt="" />
+                    </button>
+                  </div>
+                  <img src="img/Rectangle 1028.png" alt="" />
+                </div>
                 <div class="swiper-slide-content">
                   <p class="room-name">Shared room, Sharjah</p>
                   <div class="price-box">
@@ -693,7 +745,7 @@
         </div>
       </section>
 
-      <section class="section-roommate">
+      <!-- <section class="section-roommate">
         <div class="container">
           <h2 class="heading-secondary text-center">Available Roommate</h2>
 
@@ -702,10 +754,9 @@
               Best roommates that match your need
             </h2>
             <div class="roommate active">
-              <p class="rotate-name">Ali Saebe</p>
+              <p class="roommate-name mb-4">Ali Saebe</p>
               <div class="roommate-content">
-                <div>
-                  <p class="roommate-name mb-4">Ali Saebe</p>
+                <div class="roommate-rating">
                   <div class="d-flex align-items-center">
                     <img src="img/icon/Path 3612.svg" alt="" width="12" />
                     <span class="px-3 border-end border-white">Dubai</span>
@@ -720,16 +771,15 @@
                     class="mb-4"
                     width="26"
                   />
-                  <p>4.8</p>
+                  <p class="m-0">4.8</p>
                 </div>
               </div>
             </div>
 
             <div class="roommate">
-              <p class="rotate-name">Ali Saebe</p>
+              <p class="roommate-name mb-4">Ali Saebe</p>
               <div class="roommate-content">
-                <div>
-                  <p class="roommate-name mb-4">Ali Saebe</p>
+                <div class="roommate-rating">
                   <div class="d-flex align-items-center">
                     <img src="img/icon/Path 3612.svg" alt="" width="12" />
                     <span class="px-3 border-end border-white">Dubai</span>
@@ -744,15 +794,14 @@
                     class="mb-4"
                     width="26"
                   />
-                  <p>4.8</p>
+                  <p class="m-0">4.8</p>
                 </div>
               </div>
             </div>
             <div class="roommate">
-              <p class="rotate-name">Ali Saebe</p>
+              <p class="roommate-name mb-4">Ali Saebe</p>
               <div class="roommate-content">
-                <div>
-                  <p class="roommate-name mb-4">Ali Saebe</p>
+                <div class="roommate-rating">
                   <div class="d-flex align-items-center">
                     <img src="img/icon/Path 3612.svg" alt="" width="12" />
                     <span class="px-3 border-end border-white">Dubai</span>
@@ -767,15 +816,14 @@
                     class="mb-4"
                     width="26"
                   />
-                  <p>4.8</p>
+                  <p class="m-0">4.8</p>
                 </div>
               </div>
             </div>
             <div class="roommate">
-              <p class="rotate-name">Ali Saebe</p>
+              <p class="roommate-name mb-4">Ali Saebe</p>
               <div class="roommate-content">
-                <div>
-                  <p class="roommate-name mb-4">Ali Saebe</p>
+                <div class="roommate-rating">
                   <div class="d-flex align-items-center">
                     <img src="img/icon/Path 3612.svg" alt="" width="12" />
                     <span class="px-3 border-end border-white">Dubai</span>
@@ -790,13 +838,13 @@
                     class="mb-4"
                     width="26"
                   />
-                  <p>4.8</p>
+                  <p class="m-0">4.8</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -882,6 +930,98 @@
     <script src="lib/swiper js/swiper-bundle.min.js"></script>
 
     <script>
+      ///////////////////////////////////////
+      // Slider
+      const slider = function () {
+        const slides = document.querySelectorAll(".slider-slide");
+        const btnLeft = document.querySelector(".slider__btn--left");
+        const btnRight = document.querySelector(".slider__btn--right");
+        const dotContainer = document.querySelector(".dots");
+
+        let curSlide = 0;
+        const maxSlide = slides.length;
+
+        // Functions
+        const createDots = function () {
+          slides.forEach(function (_, i) {
+            dotContainer.insertAdjacentHTML(
+              "beforeend",
+              `<button class="dots__dot" data-slide="${i}"></button>`
+            );
+          });
+        };
+
+        const activateDot = function (slide) {
+          document
+            .querySelectorAll(".dots__dot")
+            .forEach((dot) => dot.classList.remove("dots__dot--active"));
+
+          document
+            .querySelector(`.dots__dot[data-slide="${slide}"]`)
+            .classList.add("dots__dot--active");
+        };
+
+        const goToSlide = function (slide) {
+          slides.forEach((s, i) => {
+            s.style.opacity = 0;
+          });
+          slides[slide].style.opacity = 1;
+        };
+
+        // Next slide
+        const nextSlide = function () {
+          if (curSlide === maxSlide - 1) {
+            curSlide = 0;
+          } else {
+            curSlide++;
+          }
+
+          document.querySelectorAll(".slider-slide p").forEach((item) => {
+            item.classList.add("next-active");
+          });
+
+          setTimeout(function () {
+            goToSlide(curSlide);
+            document.querySelectorAll(".slider-slide p").forEach((item) => {
+              item.classList.remove("next-active");
+            });
+          }, 400);
+
+          activateDot(curSlide);
+        };
+
+        const prevSlide = function () {
+          if (curSlide === 0) {
+            curSlide = maxSlide - 1;
+          } else {
+            curSlide--;
+          }
+          document.querySelectorAll(".slider-slide p").forEach((item) => {
+            item.classList.add("prev-active");
+          });
+          setTimeout(function () {
+            goToSlide(curSlide);
+            document.querySelectorAll(".slider-slide p").forEach((item) => {
+              item.classList.remove("prev-active");
+            });
+          }, 400);
+          activateDot(curSlide);
+        };
+
+        const init = function () {
+          goToSlide(0);
+          createDots();
+
+          activateDot(0);
+        };
+        init();
+
+        // Event handlers
+        btnRight.addEventListener("click", nextSlide);
+        btnLeft.addEventListener("click", prevSlide);
+      };
+      slider();
+
       document
         .querySelector(".clear-search-btn")
         .addEventListener("click", function () {
@@ -889,6 +1029,7 @@
         });
 
       const swiper = new Swiper(".cities-swiper", {
+        slidesPerGroup: 3,
         navigation: {
           nextEl: ".slider-next",
           prevEl: ".slider-prev",

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/general-2.css" />
+    <link rel="stylesheet" href="css/favorite.css" />
+
+    <title>Favorite</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg header">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/home-logo.svg" alt="" class="header-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">See More</a>
+            </li>
+          </ul>
+
+          <div class="header-icons">
+            <a href="favorite.html"
+              ><img
+                src="img/heart-fill.svg"
+                alt="red heart"
+                class="header-icon"
+            /></a>
+            <div class="dropdown chat">
+              <button class="dropdown-toggler">
+                <img
+                  src="img/Subtract.svg"
+                  alt="Subtract"
+                  class="header-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <div class="dropdown-header">
+                  <h4 class="dropdown-title">Chats</h4>
+                  <div class="chat-icons">
+                    <button><img src="img/chat-icon.svg" alt="" /></button>
+                    <button><img src="img/chat-dots.svg" alt="" /></button>
+                  </div>
+                </div>
+
+                <ul class="chat-list">
+                  <li>
+                    <a href="chat.html" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="chat.html" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="chat-item">
+                      <img src="img/person-1.png" alt="" class="user-img" />
+                      <div class="ms-3">
+                        <p class="user-name">Ali Saebe</p>
+                        <p class="user-text">I need roommate to..</p>
+                      </div>
+                      <span class="chat-time">36m</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+            <div class="dropdown chat">
+              <button class="dropdown-toggler">
+                <img src="img/bell-fill.svg" alt="bell" class="header-icon" />
+              </button>
+
+              <ul class="dropdown-list dropdown-list-notifications">
+                <div class="dropdown-header">
+                  <h4 class="dropdown-title">Notifications</h4>
+                  <div class="chat-icons">
+                    <button><img src="img/chat-dots.svg" alt="" /></button>
+                  </div>
+                </div>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      All
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                    >
+                      Unread
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                    tabindex="0"
+                  >
+                    <div class="notification-box">
+                      <h4 class="notification-title">New</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar notification-imgs">
+                            <img src="img/Ellipse 646.png" alt="" />
+                            <img src="img/Ellipse 661.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>
+                                There are a Roommates who matches your profile.
+                                Check it out now!
+                              </p>
+                              <span>11m</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="notification-box">
+                      <h4 class="notification-title">Today</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img src="img/person-fill.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>Someone adding your ad to favorites!</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="notification-box">
+                      <h4 class="notification-title">Older</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="notification-imgs noti-avatar">
+                            <img src="img/person-1.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>Ali Saebe gave you a rating.</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img
+                                src="img/icon/envelope-fill-black.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>You have a new message!</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="notification-imgs noti-avatar">
+                            <img src="img/Ellipse 651.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>Dema doghouz request to follow you.</p>
+                              <span>14h</span>
+                            </div>
+                            <div class="confirm-request">
+                              <div class="confirm-btn button">Confirm</div>
+                              <div class="delete-btn button">Delete</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img src="img/person-fill.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>Someone adding your ad to favorites!</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="notification-imgs noti-avatar">
+                            <img src="img/person-1.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>Ali Saebe gave you a rating.</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img
+                                src="img/icon/envelope-fill-black.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>You have a new message!</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                    tabindex="0"
+                  >
+                    <div class="notification-box">
+                      <h4 class="notification-title">New</h4>
+
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar notification-imgs">
+                            <img src="img/Ellipse 646.png" alt="" />
+                            <img src="img/Ellipse 661.png" alt="" />
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>
+                                There are a Roommates who matches your profile.
+                                Check it out now!
+                              </p>
+                              <span>11m</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="notification-box">
+                      <h4 class="notification-title">Today</h4>
+                      <a href="#">
+                        <div class="notification-item">
+                          <div class="noti-avatar">
+                            <div class="notification-unknown-img">
+                              <img src="img/person-fill.svg" alt="" />
+                            </div>
+                          </div>
+                          <div class="notification-text">
+                            <div>
+                              <p>Someone adding your ad to favorites!</p>
+                              <span>14h</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <div class="dropdown chat menu">
+              <button class="dropdown-toggler">
+                <img
+                  src="img/grid-3x3-gap-fill.svg"
+                  alt="Subtract"
+                  class="header-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <h4 class="dropdown-title mb-5">Menu</h4>
+
+                <ul class="chat-list">
+                  <div class="dropdown">
+                    <button class="change-account-btn">
+                      Change account type
+                    </button>
+                    <ul class="dropdown-list dropdown-list-fixed">
+                      <li class="account-type-item">
+                        <a href="#" class="account-type-link"
+                          ><img src="img/Group 635.png" alt="" />
+                          <p>Seeker of room</p></a
+                        >
+                      </li>
+                      <li class="account-type-item">
+                        <a href="#" class="account-type-link"
+                          ><img src="img/Group 635.png" alt="" />
+                          <p>Seeker of room</p></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/Union.svg" alt="" class="grid-icon" />
+                      <span>My Advertisements</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/Group 636.svg" alt="" class="grid-icon" />
+                      <span>My Plan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-link">
+                      <img src="img/rating.svg" alt="" class="grid-icon" />
+                      <span>Ratings</span>
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <a href="favorite">
+              <img
+                src="img/Ellipse 88.png"
+                alt=""
+                class="user-profile"
+                class="header-icon"
+              />
+            </a>
+
+            <div class="divider"></div>
+
+            <div class="dropdown">
+              <button class="dropdown-toggler">
+                <span class="dropdown-text">En</span>
+                <img
+                  src="img/caret-down-fill.svg"
+                  alt=""
+                  class="dropdown-icon"
+                />
+              </button>
+
+              <ul class="dropdown-list">
+                <li><a href="#" class="dropdown-link active">English</a></li>
+                <li><a href="#" class="dropdown-link">Arabic</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="favorite-container">
+      <div class="favorite-header">
+        <h4 class="favorite-title">My favorite</h4>
+        <div class="chat-icons">
+          <button><img src="img/chat-dots.svg" alt="" /></button>
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="favorite-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#favorite-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="favorite-tab-pane"
+            aria-selected="true"
+          >
+            Favorite
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="overlooked-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#overlooked-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="overlooked-tab-pane"
+            aria-selected="false"
+          >
+            Overlooked
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="favorite-tab-pane"
+          role="tabpanel"
+          aria-labelledby="favorite-tab"
+          tabindex="0"
+        >
+          <div class="favorite-list">
+            <div class="favorite-item">
+              <div class="chat-icons">
+                <button><img src="img/chat-dots.svg" alt="" /></button>
+              </div>
+              <div class="favorite-img">
+                <img src="img/Rectangle 1000.png" alt="" />
+              </div>
+              <div class="favorite-content">
+                <div class="favorite-heading">
+                  <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                  <div class="rating">
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                  </div>
+                </div>
+
+                <p class="price"><span>$ 1,000</span> /month</p>
+
+                <div class="rooms">
+                  <div>
+                    <img
+                      src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>2 Bedroom</span>
+                  </div>
+                  <div>
+                    <img
+                      src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>1 Bathroom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorite-item">
+              <div class="chat-icons">
+                <button><img src="img/chat-dots.svg" alt="" /></button>
+              </div>
+              <div class="favorite-img">
+                <img src="img/Rectangle 1000.png" alt="" />
+              </div>
+              <div class="favorite-content">
+                <div class="favorite-heading">
+                  <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                  <div class="rating">
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                  </div>
+                </div>
+
+                <p class="price"><span>$ 1,000</span> /month</p>
+
+                <div class="rooms">
+                  <div>
+                    <img
+                      src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>2 Bedroom</span>
+                  </div>
+                  <div>
+                    <img
+                      src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>1 Bathroom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="favorite-item">
+              <div class="chat-icons">
+                <button><img src="img/chat-dots.svg" alt="" /></button>
+              </div>
+              <div class="favorite-img">
+                <img src="img/Rectangle 1000.png" alt="" />
+              </div>
+              <div class="favorite-content">
+                <div class="favorite-heading">
+                  <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                  <div class="rating">
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                  </div>
+                </div>
+
+                <p class="price"><span>$ 1,000</span> /month</p>
+
+                <div class="rooms">
+                  <div>
+                    <img
+                      src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>2 Bedroom</span>
+                  </div>
+                  <div>
+                    <img
+                      src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>1 Bathroom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="overlooked-tab-pane"
+          role="tabpanel"
+          aria-labelledby="overlooked-tab"
+          tabindex="0"
+        >
+          <div class="favorite-list">
+            <div class="favorite-item">
+              <div class="chat-icons">
+                <button><img src="img/chat-dots.svg" alt="" /></button>
+              </div>
+              <div class="favorite-img">
+                <img src="img/Rectangle 1000.png" alt="" />
+              </div>
+              <div class="favorite-content">
+                <div class="favorite-heading">
+                  <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                  <div class="rating">
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                  </div>
+                </div>
+
+                <p class="price"><span>$ 1,000</span> /month</p>
+
+                <div class="rooms">
+                  <div>
+                    <img
+                      src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>2 Bedroom</span>
+                  </div>
+                  <div>
+                    <img
+                      src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>1 Bathroom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="favorite-item">
+              <div class="chat-icons">
+                <button><img src="img/chat-dots.svg" alt="" /></button>
+              </div>
+              <div class="favorite-img">
+                <img src="img/Rectangle 1000.png" alt="" />
+              </div>
+              <div class="favorite-content">
+                <div class="favorite-heading">
+                  <h3 class="heading-tertiary">Shared bedroom, Sharjah</h3>
+                  <div class="rating">
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                    <img src="img/full-star.svg" alt="" />
+                  </div>
+                </div>
+
+                <p class="price"><span>$ 1,000</span> /month</p>
+
+                <div class="rooms">
+                  <div>
+                    <img
+                      src="img/bed_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>2 Bedroom</span>
+                  </div>
+                  <div>
+                    <img
+                      src="img/bathtub_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt=""
+                    />
+                    <span>1 Bathroom</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap/bootstrap.bundle.min.js" async></script>
+  </body>
+</html>

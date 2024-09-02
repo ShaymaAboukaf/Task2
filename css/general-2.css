@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: 400;
   color: #292c2d;
   overflow-x: hidden;
@@ -76,6 +76,23 @@ button {
   border: none;
   text-transform: capitalize;
   transition: 0.3s;
+}
+
+.primary-btn {
+  background-color: #2387c2;
+  color: #fff;
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+  background-color: #2376a7;
+  color: #fff;
+}
+
+.secondary-btn {
+  border: 1px solid #2387c2 !important;
+  color: #2387c2 !important;
+  background-color: transparent;
 }
 
 .margin-bottom-md {
